@@ -20,12 +20,12 @@ else if (randomNum === 5) {
     var vowel = "u"
 }
 
-// console.log(vowel)
+console.log(`One of the vowel letters has been Generated: `)
 
 const asnwer = await inquirer.prompt([
     {
-        message:'Guess and Select a vowel to check ',
-        type:"rawlist",
+        message:'Guess and Enter a vowel to check ',
+        type:"list",
         name:"userGuess",
         choices:["a", "e", "i", "o", "u"]
     }
@@ -34,8 +34,8 @@ const asnwer = await inquirer.prompt([
 // console.log(asnwer.userGuess)
 
 if(vowel === asnwer.userGuess) {
-    console.log("RIGTH GUESS!")
+    console.log(`${asnwer.userGuess} is RIGTH GUESS!`)
 }
 else {
-    console.log("WRONG GUESS!")
+    console.log(`${asnwer.userGuess} is WRONG GUESS!`)
 }
