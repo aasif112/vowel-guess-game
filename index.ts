@@ -20,7 +20,7 @@ else if (randomNum === 5) {
     var vowel = "u"
 }
 
-console.log(`One of the vowel letters has been Generated: `)
+console.log(`A random vowel letter has been Generated: `)
 
 const asnwer = await inquirer.prompt([
     {
